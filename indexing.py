@@ -92,6 +92,15 @@ for document in cleaned_documents:
     docTermMatrix.append(tf_idf_list)
 
 #Printing the document-term matrix.
+print("Document-Term Matrix")
 print("\t" + "     ".join(terms))
 for i, row in enumerate(docTermMatrix):
     print(f"d{i+1}:", "\t".join(f"{value:.3f}" for value in row))
+
+'''
+Document-Term Matrix
+	love     cat     dog
+d1: 0.000	0.117	0.000
+d2: 0.000	0.000	0.088
+d3: 0.000	0.059	0.059
+'''
